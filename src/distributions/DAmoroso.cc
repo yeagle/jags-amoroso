@@ -23,7 +23,7 @@ bool DAmoroso::checkParameterValue (vector<double const *> const &parameters) co
     return  (true);
 }
 
-double DAmoroso::damoroso(double t, vector<double const *> const &parameters) const
+double DAmoroso::damoroso(double x, vector<double const *> const &parameters) const
 {
   double a = A(parameters); 
   double theta = THETA(parameters); 

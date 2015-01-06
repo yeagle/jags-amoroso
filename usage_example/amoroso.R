@@ -6,7 +6,7 @@
 # GPL 3.0+ or (cc) by-sa (http://creativecommons.org/licenses/by-sa/3.0/)
 #
 # created 2015-01-06
-# last mod 2015-01-06 16:51 DW
+# last mod 2015-01-06 17:03 DW
 #
 
 rm(list=ls())
@@ -44,7 +44,7 @@ inits2 <- list(alpha=6)
 inits <- list(inits1,inits2)
 
 # sample
-j.model <- jags.model(mf, dat, inits, n.chains=3, n.adapt=100)
+j.model <- jags.model(mf, dat, inits, n.chains=2, n.adapt=100)
 j.samples <- coda.samples(j.model, params, n.iter=400, thin=3)
 
 # plot

@@ -5,6 +5,6 @@ amorosodist_la_CPPFLAGS = -I$(top_srcdir)/src \
 
 amorosodist_la_LDFLAGS = -no-undefined -module -avoid-version
 
-amorosodist_la_SOURCES = DWald.cc
+amorosodist_la_SOURCES = DAmoroso.cc
 
-noinst_HEADERS = DWald.h
+noinst_HEADERS = DAmoroso.h
