@@ -71,13 +71,13 @@ Windows
 
 # For building 32bit binaries
 CXX="g++ -m32" \
-./configure LDFLAGS="-L/c/Progra~1/JAGS/JAGS-3.3.0/i386/bin" CXXFLAGS="-I/c/Progra~1/JAGS/JAGS-3.4.0/include"
+./configure LDFLAGS="-L/c/Progra~1/JAGS/JAGS-3.4.0/i386/bin" CXXFLAGS="-I/c/Progra~1/JAGS/JAGS-3.4.0/include"
 
 make win32
 
 # For building 64bit binaries
 CXX="g++ -m64" \
-./configure LDFLAGS="-L/c/Progra~1/JAGS/JAGS-3.3.0/x64/bin" CXXFLAGS="-I/c/Progra~1/JAGS/JAGS-3.4.0/include"
+./configure LDFLAGS="-L/c/Progra~1/JAGS/JAGS-3.4.0/x64/bin" CXXFLAGS="-I/c/Progra~1/JAGS/JAGS-3.4.0/include"
 
 make win64
 
