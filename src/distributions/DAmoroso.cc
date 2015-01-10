@@ -30,13 +30,15 @@ double DAmoroso::damoroso(double x, vector<double const *> const &parameters) co
   double alpha = ALPHA(parameters); 
   double beta = BETA(parameters);
 
+  double d;
   double logd;
 
-  logd = -log(gammafn(alpha)) + log(fabs(beta/theta)) + 
-         ( (alpha*beta)-1) * log((x-a)/theta ) + 
-         ( -pow( ( (x-a)/theta ), beta) );
+  d = 1 / gammafn(alpha) * fabs(beta / theta) * 
+      pow(( (x - a) / theta), (alpha * beta - 1)) *
+      exp(- pow(((x - a) / theta), beta) );
+  logd = log(d);
   
-  return logd;
+  return d;
 }
 
 double DAmoroso::logDensity(double x, PDFType type,

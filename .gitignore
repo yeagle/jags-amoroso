@@ -26,10 +26,3 @@ src/distributions/.deps/
 src/distributions/Makefile
 src/distributions/Makefile.in
 stamp-h1
-config.h.in~
-src/.libs/
-src/amoroso.la
-src/amoroso_la-amoroso.lo
-src/distributions/.libs/
-src/distributions/amorosodist.la
-src/distributions/amorosodist_la-DAmoroso.lo
