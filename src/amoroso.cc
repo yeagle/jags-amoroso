@@ -3,16 +3,16 @@
 
 namespace amoroso { // module namespace
 
-class WALDModule : public Module { // module class
+class AMOROSOModule : public Module { // module class
   public:
-    WALDModule(); // constructor
-    ~WALDModule(); // destructor
+    AMOROSOModule(); // constructor
+    ~AMOROSOModule(); // destructor
 };
 
-WALDModule::WALDModule() : Module("amoroso") {
+AMOROSOModule::AMOROSOModule() : Module("amoroso") {
   insert(new DAmoroso); // inherited function to load JAGS objects
 }
-WALDModule::~WALDModule() {
+AMOROSOModule::~AMOROSOModule() {
   std::vector<Distribution*> const &dvec = distributions();
   for (unsigned int i = 0; i < dvec.size(); ++i) {
     delete dvec[i];
@@ -21,4 +21,4 @@ WALDModule::~WALDModule() {
 
 }
 
-amoroso::WALDModule _amoroso_module;
+amoroso::AMOROSOModule _amoroso_module;
