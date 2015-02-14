@@ -9,7 +9,7 @@ http://www.r-project.org/Licenses/GPL-2
 General install notes
 ---------------------
 # dependencies (on a clean ubuntu installation)
-sudo apt-get install autoconf libtool g++
+sudo apt-get install autoconf automake libtool g++
 
 # creating all auxiliary files
 autoreconf -fvi
