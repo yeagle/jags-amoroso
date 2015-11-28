@@ -2,6 +2,7 @@
 #define DAMOROSO_H_
 #include <distribution/ScalarDist.h> // JAGS scalar distribution base class
 
+namespace jags {
 namespace amoroso {
 
 class DAmoroso : public ScalarDist // scalar distribution class
@@ -23,5 +24,7 @@ class DAmoroso : public ScalarDist // scalar distribution class
     bool isDiscreteValued(std::vector<bool> const &mask) const;
 };
 
-}
+} // namespace amoroso
+} // namespace jags
+
 #endif /* DAMOROSO_H_ */

@@ -1,6 +1,7 @@
 #include <Module.h> // JAGS module base class
 #include <distributions/DAmoroso.h> // Amoroso distribution class
 
+namespace jags { // jags namespace
 namespace amoroso { // module namespace
 
 class AMOROSOModule : public Module { // module class
@@ -19,6 +20,7 @@ AMOROSOModule::~AMOROSOModule() {
   } // deletes instantiated distribution objects
 }
 
-}
+} // namespace amoroso
+} // namespace jags
 
 amoroso::AMOROSOModule _amoroso_module;

@@ -13,6 +13,7 @@ using std::vector;
 #define ALPHA(par) (*par[2])
 #define BETA(par) (*par[3])
 
+namespace jags {
 namespace amoroso {
 
 DAmoroso::DAmoroso() : ScalarDist("damoroso", 4, DIST_PROPORTION)
@@ -70,4 +71,5 @@ bool DAmoroso::isDiscreteValued(vector<bool> const &mask) const
     return true;
 }
 
-}
+} // namespace amoroso
+} // namespace jags
