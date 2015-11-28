@@ -42,5 +42,6 @@ AC_CONFIG_FILES([
   libltdl/Makefile
   src/Makefile
   src/distributions/Makefile	
+  win/Makefile
 ])
 AC_OUTPUT

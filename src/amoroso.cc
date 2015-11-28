@@ -1,4 +1,4 @@
-#include <Module.h> // JAGS module base class
+#include <module/Module.h> // JAGS module base class
 #include <distributions/DAmoroso.h> // Amoroso distribution class
 
 namespace jags { // jags namespace
@@ -23,4 +23,4 @@ AMOROSOModule::~AMOROSOModule() {
 } // namespace amoroso
 } // namespace jags
 
-amoroso::AMOROSOModule _amoroso_module;
+jags::amoroso::AMOROSOModule _amoroso_module;
